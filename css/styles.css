@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Libre+Franklin:wght@300&family=Nanum+Gothic&family=Pacifico&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+.background {
+    background-image: linear-gradient(#EBDDB9, #EBD9A9, #EBD39B);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+
+nav { 
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 8vh;
+    padding: 0.75vw;
+    text-align: center;
+    background-color: #965E47;
+    z-index: 3;
+ }
+
+.pagetitle {
+    color: #CADDC5;
+    font-size: 4vw;
+    margin-right: 20%;
+    font-family: 'Nanum Gothic', sans-serif;
+    overflow-y: hidden;
+}
+
+.link {
+    margin-right: 3vw;
+    font-size:3vw;
+    overflow-y: hidden;
+}
+
+.link a {
+    color: #E8EDE6;
+    font-family: 'Pacifico', cursive;
+}
+
+.link span {
+    color: #D2F2CB;
+}
+
+.link a:hover {
+    color: #D2F2CB;
+    background-color: #EBD39B;
+    border: 0.6vw solid #779E85;
+}
+
+.spritefb {
+	background: url('../media/Sprites.png') no-repeat -170px -40px;
+	width: 80px;
+	height: 80px;
+    z-index: 99;
+}
+
+
+footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 8vh;
+    padding: 0.75vw;
+    text-align: center;
+    background-color: #965E47;
+    left: 0;
+    bottom: 0;
+    z-index: -99;
+}
+
+.copyright {
+    font-family: 'Abhaya Libre', serif;
+    color: #CADDC5;
+    font-size: 3.5vw;
+    margin-right: auto;;
+
+}
+
+.section1 {
+    width: 100%;
+    height: 36%;
+    position: center;
+    display: flex;
+    
+}
+
+.section1t {
+    width: 100%;
+    height: 36%;
+    z-index: 2;
+}
+
+.section1 p {
+    font-family: 'Abhaya Libre', serif;
+    color: #A9CDA2;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 12%;
+    text-shadow: 0px 0px 10px black;
+}
+
+.section1 video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    object-fit: fill;
+}
+
+.section12 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5vh;
+    z-index: 4;
+}
+
+.p1box {
+    width: 35vw;
+    height: 40vh;
+    z-index: 4;
+    opacity: 1.0;
+    background-color: #FFF5DC;
+    border-radius: 7%;
+    border: 1vw solid #779E85;
+    box-shadow: 0px 70px 20px black;
+    animation: p1boxScale 1s linear;
+}
+
+.titletxt {
+    text-align: center;
+    font-size: 3vw;
+    color: #779E85;
+    font-family: 'Abhaya Libre', serif;
+    margin-top: 1.5vh;
+}
+
+.subtltxt {
+    text-align: justify;
+    font-size: 1.8vw;
+    color: #779E85;
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 1.5vh;
+}
+
+.subtltxtl {
+    text-align: center;
+    font-size: 1.8vw;
+    color: #779E85;
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 1.5vh;
+}
+
+main {
+    margin: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.p3box {
+    width: 90%;
+    height: 70%;
+    z-index: 4;
+    opacity: 1.0;
+    background-color: #FFF5DC;
+    border-radius: 7%;
+    border: 1vw solid #779E85;
+    box-shadow: 0px 0px 20px black;
+    animation: p3boxScale 1s linear;
+}
+
+.p2box {
+    width: 23%;
+    height: 70%;
+    z-index: 4;
+    opacity: 1.0;
+    background-color: #FFF5DC;
+    border-radius: 7%;
+    border: 1vw solid #779E85;
+    box-shadow: 0px 0px 20px black;
+    animation: p2boxScale 1s linear;
+}
+
+@keyframes p1boxScale{
+    0% {transform: scale(1, 1);}
+    50%{transform: scale(1.15,1.15)};
+    100% {transform: scale(1, 1);}
+}
+
+@keyframes p2boxScale{
+    0% {transform: scale(1, 1);}
+    50%{transform: scale(1.03,1.03)};
+    100% {transform: scale(1, 1);}
+}
+
+@keyframes p3boxScale{
+    0% {transform: scale(1, 1);}
+    50%{transform: scale(1.05,1.05)};
+    100% {transform: scale(1, 1);}
+}
+
+
+
+
+
+
+
